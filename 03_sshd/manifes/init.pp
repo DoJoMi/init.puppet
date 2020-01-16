@@ -9,7 +9,7 @@ class sshd {
         require => Package['openssh-server'],
     }
 
-    file{'sshd_config':
+    file {'sshd_config':
         ensure => file,
         owner => root,
         group => root,
